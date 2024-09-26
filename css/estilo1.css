@@ -1,0 +1,788 @@
+body{
+    margin: 0%;
+}
+
+#rayita1{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(209, 197, 197);
+}
+
+#rayita2{
+    width: 100%;
+    height: 30px;
+    background-color:#34495e;
+}
+
+header{
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    z-index: 100;
+    height: 450px;
+}
+
+header img{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    float: left;
+    background-color: black;
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+nav ul li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    background: #eca023;
+}
+section {
+    display: block;
+    margin-top: 100px;
+    margin-left:360px;
+    max-width:50%;
+    font-family: Arial, Helvetica, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las secciones */
+section {
+    margin-bottom: 20px;
+}
+/* Estilo para la lista desordenada */
+.unordered-list {
+    list-style: disc; /* Mantiene los puntos de la lista */
+    list-style-position: inside; /* Los puntos se colocan dentro del contenedor de lista */
+    padding-left: 20px; /* Alinea los puntos */
+    margin: 0;
+}
+
+.unordered-list {
+    list-style: disc; /* Mantiene los puntos de la lista */
+    list-style-position: inside; /* Los puntos se colocan dentro del contenedor de lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Hace que los elementos se alineen horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si el espacio es insuficiente */
+}
+
+
+.unordered-list img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.unordered-list p {
+    margin: 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.ordered-list {
+    padding: 0;
+    margin: 0;
+    display: flex; /* Hace que los elementos se alineen horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si el espacio es insuficiente */
+}
+
+
+.ordered-list li {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+    color: #555;
+}
+
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+.profile-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.profile-content p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.profile-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-image img {
+    max-width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        padding: 10px;
+    }
+}
+/* Estilos para el aside (barra lateral) */
+.sidebar {
+    background-color: #f4f4f4; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding:50px;
+    width: 100%; 
+    margin-top: 15px;
+    max-width: 300px; 
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+.sidebar h2 {
+    font-size: 1.6em; 
+    color: #333; 
+    border-bottom: 2px solid #3498db; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
+}
+
+.widget {
+    margin-bottom: 20px; 
+}
+
+.widget h3 {
+    font-size: 1.4em; 
+    color: #444; 
+    margin-bottom: 10px; 
+}
+
+.widget ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.widget ul li {
+    margin-bottom: 10px; 
+}
+
+.widget ul li a {
+    text-decoration: none; 
+    color: #3498db; 
+    font-size: 1em;
+}
+
+.widget ul li a:hover {
+    text-decoration: underline; 
+    color: #2980b9; 
+}
+/* Estilos para la galería de fotos */
+.gallery {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.gallery h2 {
+    font-size: 1.6em;
+    color: #333;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.ban{
+    font-size: 1.6em;
+    color: #333;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 70%;
+    border-radius: 8px;
+    object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsionar */
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #34495e;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9em;
+}
+/*Css Actualizado Neider */
+
+/* Estilo para centrar el contenido del aside */
+.sidebar {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px; /* Limitar el ancho */
+    padding: 20px;
+}
+
+/* Estilo para los widgets, dándoles un aspecto de tarjeta */
+.widget {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos dentro de los widgets */
+.widget h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Listas dentro de los widgets */
+.widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Links dentro de los widgets */
+.widget ul li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.widget ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Para un espaciado elegante */
+.profile-content {
+    margin-bottom: 40px;
+}
+
+/* Estilos generales para el footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+/* Evolucion de computadores neider */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4a90e2;
+    padding: 20px;
+    text-align: center;
+}
+
+.banner-img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+caption {
+    font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #4a90e2;
+    color: white;
+}
+
+td img {
+    max-width: 100px; /* Ajustar el tamaño de las imágenes */
+    height: auto;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+footer {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+/* Columnas Neider */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.columna {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #0056b3;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.columna p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.columna img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+/* Video Neider */
+.video-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+}
+
+.video-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.video-frame {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-description {
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+}
+/* Audio Neider*/
+.audio-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+}
+
+.audio-header {
+    background-color: #2980b9;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.audio-player {
+    padding: 20px;
+    text-align: center;
+}
+
+.audio-player audio {
+    width: 100%;
+    border-radius: 5px;
+    outline: none; /* Remove default outline */
+}
+
+.audio-description {
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+}
+/*Vieñtas css Neider*/
+
+
+.div__deg {
+    height: 60px;
+    width: 80%;
+    background: linear-gradient(to right, #47ff7f, #477fff);
+}
+
+.btn__anim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #000;
+    background-color: transparent;
+
+}
+
+.btn__anim:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.anim__btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: 10;
+    background-color: #007BFF;
+}
+
+.btn__anim > span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000;
+    z-index: 100;
+}
+
+.btn__anim:hover .anim__btn {
+    animation: btn-hover .3s forwards;
+}
+.btn__anim:not(:hover) .anim__btn {
+    animation: btn-no-hover .3s forwards;
+}
+
+@keyframes btn-hover {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes btn-no-hover {
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 0;
+    }
+}
+/*Animacion cj*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.image-container {
+    width: 100%;
+    max-width: 800px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    animation: moveLeftToRight 5s infinite linear;
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        left: -200px;
+        opacity: 0;
+    }
+    50% {
+        left: calc(100% - 200px);
+        opacity: 1;
+    }
+    100% {
+        left: -200px;
+        opacity: 0;
+    }
+}
